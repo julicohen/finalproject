@@ -49,7 +49,7 @@ public class MinesweeperImpl implements Minesweeper {
 	}
 	public void flagAsMine(int row, int col) {
 		// TODO Auto-generated method stub
-		if(cellmat.thereIsFlag(row, col)==false){
+		if(!cellmat.thereIsFlag(row, col)){
 			cellmat.setFlag(row, col);			
 		}
 	}
@@ -72,7 +72,7 @@ public class MinesweeperImpl implements Minesweeper {
 		boolean GameOver=false;
 		for (int i=0; i<rowmat; i++) { 
             for (int j=0; j<colmat; j++){ 
-            	if(cellmat.thereIsUncovered(i, j)|cellmat.thereIsFlag(i, j)){
+            	if(cellmat.thereIsUncovered(i, j)||cellmat.thereIsFlag(i, j)){
             		ContUncovered ++;
             	}
             } 
