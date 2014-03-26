@@ -26,10 +26,10 @@ public class cell {
 	void setMine(boolean m){
 		this.Mine=m;
 	}
-	void setEstate(boolean hu){
+	void setState(boolean hu){
 		Uncovered=hu;
 	}
-	boolean getEstate(){
+	boolean getState(){
 		return Uncovered;
 	}
 	

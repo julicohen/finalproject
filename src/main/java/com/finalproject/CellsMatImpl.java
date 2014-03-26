@@ -17,7 +17,7 @@ public class CellsMatImpl implements CellsMat{
 	            for (int j=0; j<col; j++){ 
 	            	cel=new cell(i, j);
 	            	cel.setFlag(false);
-	                cel.setEstate(false);
+	                cel.setState(false);
 	                cel.setMine(false);
 	                mat[i][j]=cel;
 	            } 
@@ -105,17 +105,17 @@ public class CellsMatImpl implements CellsMat{
 	public void ClearFlag(int row, int col) {
 		// TODO Auto-generated method stub
 		mat[row][col].setFlag(false);
-		mat[row][col].setEstate(false);
+		mat[row][col].setState(false);
 	}
 	public void setFlag(int row, int col) {
 		// TODO Auto-generated method stub
 		mat[row][col].setFlag(true);
-		mat[row][col].setEstate(true);
+		mat[row][col].setState(true);
 	}
 	public boolean thereIsUncovered(int row, int col) {
 		// TODO Auto-generated method stub
 		boolean Estate;
-		if(mat[row][col].getEstate()){
+		if(mat[row][col].getState()){
 			Estate=true;
 		}else{
 			Estate=false;
@@ -124,7 +124,7 @@ public class CellsMatImpl implements CellsMat{
 	}
 	public void uncoverCell(int row, int col) {
 		// TODO Auto-generated method stub
-		mat[row][col].setEstate(true);
+		mat[row][col].setState(true);
 	}
 	public boolean thereIsFlag(int row, int col) {
 		// TODO Auto-generated method stub
