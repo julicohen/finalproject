@@ -36,9 +36,9 @@ public class MinesweeperImpl implements Minesweeper {
 				            } 
 				       } 
 					
-					Set<Matrix2DCellPosition> c;
-					c=MatrixUtils.cascade(binmatrix, row, col);
-					for (Matrix2DCellPosition matrix2dCellPosition : c) {
+					Set<Matrix2DCellPosition> mat2d;
+					mat2d=MatrixUtils.cascade(binmatrix, row, col);
+					for (Matrix2DCellPosition matrix2dCellPosition : mat2d) {
 						cellmat.uncoverCell(matrix2dCellPosition.getRow(), matrix2dCellPosition.getColumn());
 					}
 				}else{
