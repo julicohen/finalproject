@@ -5,8 +5,9 @@ public class cell {
 		
 	}
 	int value;
-	boolean Flag;
+	boolean Flag=false;
 	boolean Uncovered;
+	boolean Mine;
 	int getvalue(){
 		return this.value;
 	}
@@ -18,6 +19,12 @@ public class cell {
 	}
 	boolean getFlag(){
 		return Flag;
+	}
+	boolean getMine(){
+		return Mine;
+	}
+	void setMine(boolean m){
+		this.Mine=m;
 	}
 	void setEstate(boolean hu){
 		Uncovered=hu;

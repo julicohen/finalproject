@@ -16,6 +16,5 @@ public interface Minesweeper {
 	void displayInternal();
 	// Binary grid: 1 if cell has a mine, 0 otherwise. For debug purposes
 	void displayRaw();
-	void setMat(CellsMat c);
 	}
 	
